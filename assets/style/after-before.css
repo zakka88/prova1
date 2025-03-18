@@ -1,0 +1,125 @@
+
+
+.h1{
+    position: relative ;
+    text-align: center;
+    font-size: 50px;
+
+}
+
+.h1::before,.h1::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 46%;
+   
+    
+}
+
+.h1::before{
+    top: 2rem;
+    left: 0;
+    background-color: red;
+}
+
+.h1::after{
+    top: 2rem;
+    right: 0;
+    background-color: darkgreen;
+}
+
+p{
+    font-size: 25px;
+}
+
+/* ---------------------------------------------- */
+
+blockquote{
+    position: relative ;
+    font-size: 50px;
+}
+
+blockquote::before,blockquote::after{
+    
+    position: absolute;
+    height: 40px;
+     
+}
+
+
+blockquote::before{
+    content: open-quote;
+    top: -2.9rem;
+    left:-2.5rem;
+    background-color: grey;
+    border-radius: 30px;
+    padding-inline: 10px;
+    padding-block: 10px;
+    
+}
+
+blockquote::after{
+    content: close-quote;
+    top: 10rem;
+    right: 40rem;
+    background-color: grey;
+    border-radius: 20px;
+    padding-inline: 10px;
+    padding-block: 10px;
+    
+}
+
+
+.ciao{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 60px;
+    list-style: none;
+    position: relative;
+    
+}
+
+img{
+    width: 20px;
+}
+
+
+
+
+.email{
+    position: relative;
+     
+}
+
+.email::after{
+    content: "email";
+    position: absolute;
+    margin: 2px;
+    top: -3px;
+}
+
+.telephone{
+    position: relative;
+    
+}
+.telephone::after{
+    content: "telephone";
+    position: absolute; 
+    margin: 2px;  
+    top: -3px;
+}
+
+.web{
+    position: relative;
+}
+.web::after{
+    content: "web";
+    position: absolute;
+    margin: 2px;
+    top: -3px;
+    
+    
+    
+}
